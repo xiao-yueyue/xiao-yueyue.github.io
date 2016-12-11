@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.head{
+	width: 100%;
+	background: #000;
+}
+.head img{
+	display: block;
+	padding: 10px;
+}
+.banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 650px;
+}
+.banner_title{
+	margin: 0 auto 20px;
+	padding: 50px 0 0;
+}
+.banner_title img{
+	display: block;
+	margin: 0 auto;
+}
+.w_btn{
+	width: 1125px;
+	overflow: hidden;
+	padding: 20px 0 0;
+	margin: 0 auto;
+}
+.w_btn li{
+	width: 215px;
+	height: 215px;
+	border-radius: 80%;
+	color: #333;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 10px;
+	cursor: pointer;
+	
+}
+.w_btn li h2{
+	padding-top: 80px;
+	padding-bottom: 25px;
+	font-size: 18px;	
+}
+.lia{
+	background: url(../image/team_dim.jpg) no-repeat center center ;
+}
+.lib{
+	background: url(../image/group_dim.jpg) no-repeat center center ;
+}
+.lic{
+	background: url(../image/pro_dim.jpg) no-repeat center center ;
+}
+.lid{
+	background: url(../image/partner_dim.jpg) no-repeat center center ;
+}
+.lie{
+	background: url(../image/recruit.jpg) no-repeat center center ;
+}
+.lia:hover{
+	background: #fff;
+	font-size: 20px;
+}
+.lib:hover{
+	background: #fff;
+	font-size: 20px;
+}
+.lic:hover{
+	background: #fff;
+	font-size: 20px;
+}
+.lid:hover{
+	background: #fff;
+	font-size: 20px;
+}
+.lie:hover{
+	background: #fff;
+	font-size: 20px;
+}
+.bga{
+	background: url(../image/team_dim.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+.bgb{
+	background: url(../image/group_dim.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+.bgc{
+	background: url(../image/pro_dim.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+.bgd{
+	background: url(../image/partner_dim.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+.bge{
+	background: url(../image/recruit.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+.move{
+	width: 200px;
+	height: 102px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -102px;
+}
+.move_img{
+	display: block;
+	margin: 0 auto 0;
+	position: relative;
+    -moz-animation: blur .3s ease-in infinite alternate forwards;
+    -ms-animation: blur .3s ease-in infinite alternate forwards;
+    -o-animation: blur .3s ease-in infinite alternate forwards;
+    -webkit-animation: blur .3s linear infinite alternate forwards;
+    animation: blur .3s linear infinite alternate forwards;
+    -webkit-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    -ms-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+}
+@keyframes blur
+{
+	from {top: 0;}
+	to {top: 10px;}
+}
+.zi{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background: url(../image/logo1.png) no-repeat;
+    background-size: 100%;
+    border-bottom: 5px solid #F9991B;
+}
+.cont{
+	width: 915px;
+	margin: 0 auto;
+}
+.cont .neirong{
+	width: 100%;
+	text-align: center;
+	color: #999;
+	font-size: 18px;
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+.cont_left{
+	width: 400px;
+	float: left;
+}
+.cont_left img{
+	width: 400px;
+	display: block;
+	padding: 25px 0;
+}
+.cont_left p{
+	width: 400px;
+	line-height: 25px;
+	padding-bottom: 10px;
+	text-align: left;
+	color: #666;
+}
+.cont_right{
+	width: 380px;
+	float: right;
+
+}
+.same1{
+	width: 380px;	
+	padding: 10px 0;
+}
+.same1 p{
+	text-align: left;
+	padding-bottom: 5px;
+}
+.same1 input{
+	width: 378px;
+	height: 36px;
+	border: 1px solid #dfdfdf;
+}
+.same1 textarea{
+	width: 378px;
+	height: 150px;
+	border: 1px solid #dfdfdf;
+}
+.tijiao{
+    display: block;
+    margin: 15px auto 30px;
+    width: 176px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    font: 500 18px Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+    background-color: #F9991B;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.footer{
+	width: 100%;
+	background: #282828;
+	padding: 30px 0 50px;
+}
+.middle{
+	width:1000px;
+	margin: 0 auto;
+}
+.middle h2{
+	padding-left: 20px;
+	color: #fff;
+	padding-bottom: 20px;
+}
+.link a{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 18px;
+    width: 7em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+.link a:hover{
+	text-decoration: underline;
+}
+.over{
+	width: 100%;
+	text-align: center;
+	color: gray;
+	padding-top: 25px;
+}

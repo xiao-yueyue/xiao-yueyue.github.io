@@ -1,0 +1,940 @@
+/*2016-3-26*/
+/* CSS Document */
+@charset "utf-8";
+
+body {
+	font-size: 16px;
+	font-family: '微软雅黑', 'microsoft yahei', ubuntu, helvetica, arial;
+}
+h1,h2,h3,h4,h5,h6,input,span,i,a,b,ul,li,p,div{
+	font-family: '微软雅黑', 'microsoft yahei', ubuntu, helvetica, arial;
+}
+
+/*左右留边*/
+.s-lr-pdall{
+	padding: 0 0.9375em;
+}
+.s-lr-mgall{
+	margin: 0 0.9375em;
+}
+.s-w100{
+	width: 100%;
+}
+
+
+/*font-size*/
+.s-f-20{
+	font-size: .625em;
+}
+.s-f-22{
+	font-size: .6875em;
+}
+.s-f-24{
+	font-size: .75em;
+}
+.s-f-26{
+	font-size: .8125em;
+}
+.s-f-28{
+	font-size: .875em;
+}
+.s-f-30{
+	font-size: .9375em;
+}
+.s-f-32{
+	font-size: 1em;
+}
+.s-f-34{
+	font-size: 1.0625em;
+}
+.s-f-36{
+	font-size: 1.125em;
+}
+
+
+
+/*display*/
+.s-dis-block{
+	display: block;
+}
+
+/*padding*/
+.s-p-t1{
+	padding-top: 1em;
+}
+.s-p-r15{
+	padding-right: 1.5em;
+}
+
+
+/*margin*/
+.s-m-t1{
+	margin-top: 1em;
+}
+
+
+
+
+/*字体颜色*/
+.s-c-333{
+	color: #333 !important;
+}
+.s-c-3493ea{
+	color: #3493ea;
+}
+.s-c-b3b3b3{
+	color: #b3b3b3;
+}
+/*黄色*/
+.s-c-f9dc85{
+	color: #f9dc85;
+}
+
+.s-c-fff{
+	color: #fff;
+}
+
+.s-c-666{
+	color: #666;
+}
+
+
+
+/*背景 颜色*/
+/*灰色*/
+.s-bg-f7f7f7{
+	background-color: #f7f7f7;
+}
+/*白色*/
+.s-bg-fff{
+	background-color: #fff;
+}
+
+
+
+/*边框*/
+.s-b-top{
+	border-top: 1px solid #dedede;
+}
+.s-b-bottom{
+	border-bottom: 1px solid #dedede;
+}
+.s-b-left{
+	border-left: 1px solid #dedede;
+}
+.s-b-right{
+	border-right: 1px solid #dedede;
+}
+
+
+/*文字居中 居左 居右*/
+.s-text-l{
+	text-align: left;
+}
+.s-text-c{
+	text-align: center;
+}
+.s-text-r{
+	text-align: right;
+}
+
+.uhide{
+	display: none;
+}
+.gelixian{width: 95%;margin: 4px auto 0;height: 1px;background-color: #dedede;}
+
+
+/*公共 提示窗口 start*/
+/*公共提示框样式*/
+@media (max-width: 768px) {
+	#alert_info .bg {
+		padding: .95em!important;
+		width: 70%!important;
+		min-width:250px!important;
+	}
+}
+#alert_info {
+	z-index: 1999;
+	position: absolute;
+	width: 100%;
+	height: 2.6em;
+	top: 35%;
+	margin-top: -1.3em;
+	text-align: center;
+}
+#alert_info .bg {
+	margin: auto auto;
+	min-width: 8em;
+	width: 45%;
+	max-width:600px!important;
+	border-radius: 0.5em;
+	background: rgba(255,255,255,1.0);
+	padding: 1.7em;
+	color: #000;
+	font-size: 1em;
+	border: 1px solid #3492ea;
+	box-shadow:4px 6px 12px rgba(0,0,0,.3);
+}
+/*公共 提示窗口 end*/
+
+
+/*模块底部分界线*/
+.s-boundary{
+	height: .176em;
+	border-bottom: 1px solid #dedede;
+	border-left: none;
+	border-right: none;
+	/*background-color: #f7f7f7; 去阴影*/
+}
+
+
+
+
+/*底部*/
+.s-mgb4{
+	margin-bottom: 4.9em;
+}
+.s-mgb1{
+	margin-bottom: 1em;
+}
+/*相对定位*/
+.s-pos-r{
+	position: relative !important;
+}
+.s-pos-a{
+	position:absolute !important;
+}
+
+/*header goback blue*/
+.s-header{
+	height: 2.82em;
+	background-color: #3493ea !important;
+}
+.s-header .button{
+	background-color: transparent;
+}
+.s-header h1{
+	font-size: 1.125em !important;
+	font-weight: 600 !important;
+}
+
+
+.s-goback{
+	margin: 0 auto !important;
+	background-size: 40% !important;
+	background-position: .9em .2em !important;
+	width: 2.54em !important;
+	height: 1em !important;
+}
+.s-bl{
+	background: url(../images/rank_back.png) no-repeat;
+	}
+.s-bl.activated{
+	background: url(../images/rank_back_p.png) no-repeat;
+	background-color:transparent !important;
+}
+
+
+
+
+
+/*按钮 固定底部蓝色 修改密码 + 评分页面*/
+/*登录按钮*/
+.s-log-btn{
+	position: fixed;
+	background-color: #f7f7f7;
+	/*position:absolute;*/
+	bottom: 0em;
+	padding: 0 2.337em;
+	display: block;
+	width: 100%;	
+}
+.s-log-btn a{
+    text-decoration: none;
+}
+.s-log-btn button{
+	border-radius: 1.5em;
+	height: 2.5em;
+	background-color: #3493ea !important;
+}
+.s-log-btn button.activated{
+	background-color: #1f83df !important;
+}
+
+
+/*微课样式*/
+.smallcourse{
+	position: absolute;
+	right: 0; 
+	top:-0.5em;
+	width: 44px;
+	height: 44px;
+	background-image: url(../images/zxkc_weike_bg.png);
+	background-size: cover;
+}
+.right9{
+	right: 9px !important;
+}
+.wh24{
+	width: 24px;
+	height: 24px;
+	background-size: 100%;
+}
+/*分界线*/
+.s-boundary625 {
+    height: .625em;
+    border: 1px solid #dedede;
+    border-left: none;
+    border-right: none;
+    background-color: #f7f7f7;
+}
+
+
+
+/*header goback blue*/
+/*.s-header{
+	height: 2.82em;
+	background-color: #3493ea !important;
+}
+.s-header .button{
+	background-color: transparent;
+}
+.s-header h1{
+	font-size: 1.125em !important;
+	font-weight: 600 !important;
+}*/
+
+
+.s-goback{
+	margin: 0 auto !important;
+	background-size: 40% !important;
+	background-position: .9em .2em !important;
+	width: 2.54em !important;
+	height: 1em !important;
+}
+.s-bl{
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/rank_back.png);
+	background-position: center center;
+
+	}
+.s-bl.activated{
+	background: url(../images/rank_back_p.png) no-repeat;
+	background-color:transparent !important;
+}
+/*end*/
+
+/*header goback gray*/
+.s-header-gray{
+	height: 2.82em;
+	background-color: #fff !important;
+	border-bottom: 1px solid #dedede !important;
+	background-image:none !important;
+}
+.s-header-gray .button{
+	background-color: transparent;
+}
+.s-header-gray h1{
+	font-size: 1.125em !important;
+	font-weight: 600 !important;
+	color: #333 !important;
+}
+
+
+.s-goback{
+	margin: 0 auto !important;
+	background-size: 40% !important;
+	background-position: center center !important;
+	width: 2em !important;
+	height: 0.5em !important;
+}
+.s-header-gray .s-bl{
+	background: url(../images/rank_back_gray.png) no-repeat;
+	}
+.s-header-gray .s-bl.activated{
+	background: url(../images/rank_back_p.png) no-repeat;
+	background-color:transparent !important;
+}
+
+
+
+
+
+/*课程详细页header*/
+.s-header-transparency{
+	height: 2.82em;
+	background-color:transparent !important;
+	border-bottom: 0px !important;
+	border-top:0px!important;
+}
+.s-header-gray .button{
+	background-color: transparent;
+}
+.s-header-gray h1{
+	font-size: 1.125em !important;
+	font-weight: 600 !important;
+	color: #333 !important;
+}
+/*header 右侧下载图标*/
+.s-down {
+    margin: 0 .8em !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+.s-header-transparency .s-downl,.s-header-transparency .s-downl.activated{
+	background-repeat: no-repeat !important;
+	background-position: 0em .5em !important;
+	background-size: 100% !important;
+}
+.s-header-transparency .s-downl{
+	background-image: url(../images/task/icon_downl.png) !important;
+	
+	}
+.s-header-transparency .s-downl.activated{
+	background-image: url(../images/task/icon_downl.png) !important;
+	
+}
+
+
+
+
+/*footer index start*/
+.s-footer{
+	border-top: none !important;
+	height:4.125em ;
+	background-image:none;
+}
+.s-footer a{
+	padding: .5em;
+}
+
+.s-tab-f .tabs{
+	height: 3.8em;
+	background: none !important;
+	
+	border: none;
+	background-image: none;
+	padding:.4em 0 0 0;
+	
+
+}
+/*.s-tab-f .tabs a
+{
+	background-color: #FFFFFF !important;
+}
+*/
+.tabs-background{
+
+}
+
+
+.s-tab-f a{
+	margin-top: .4em;
+}
+
+.s-tab-f .icon{
+	background-size: 60%;
+    margin: 0.05em auto 0.15em !important;
+    background-position: .3em 0.1em;
+    width: 1.37em;
+}
+.s-tab-f .tab-title{
+	font-size:.75em ;
+	color: #808080;
+}
+.s-tab-f .tab-item-active .tab-title{
+	color: #3b88c8;
+}
+.s-icon-home{
+	background: url(../images/index/icon_f_homel.png) no-repeat;
+}
+.s-icon-task{
+	background: url(../images/index/icon_f_taskl.png) no-repeat;
+}
+.s-icon-e{
+	background: url(../images/index/icon_f_el.png) no-repeat;
+	
+}
+.s-icon-my{
+	background: url(../images/index/icon_f_myl.png) no-repeat;
+}
+/*选中效果图标*/
+.s-icon-home-active{
+	background: url(../images/index/icon_f_homeh.png) no-repeat;
+}
+.s-icon-task-active{
+	background: url(../images/index/icon_f_taskh.png) no-repeat;
+}
+.s-icon-e-active{
+	background: url(../images/index/icon_f_eh.png) no-repeat;
+	
+}
+.s-icon-my-active{
+	background: url(../images/index/icon_f_myh.png) no-repeat;
+}
+
+.s-c-80{
+	color: #808080;
+}
+.s-fz-24{
+	font-size:.75em ;
+}
+
+.s-f-tline{
+	background-size: 60% 100%;
+	background-image: url(../images/index/f_shadow_bg.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: .7em;
+	position: absolute;
+	top: 0;
+}
+/*footer index end*/
+
+
+
+
+
+
+
+/*ionic tabs 效果 start*/
+.s-tasktab .tabs{
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.s-tasktab .tab-item{
+	color: #333;
+	
+}
+.s-tasktab .tab-item.tab-item-active,.s-tasktab .tab-item.activated{
+	border-color: #3493ea !important;
+	color: #3493ea !important;
+}
+.s-tasktab .tab-item .tab-title{
+	font-size: 1em;
+	/*padding-top: 1.2em;*/
+	display: inline-block;
+}
+
+
+/*ionic tabs 效果 end*/
+
+/*---课程列表 start---*/
+/*线下课程*/
+.s-kc-offline{
+	color: #666;
+	font-size: .6875em;
+	padding-top: .5em;
+}
+
+
+
+/*评论+点赞+查看*/
+.s-list .item{
+	padding-bottom: .725em !important;
+	padding-top: .725em !important;
+	
+}
+.s-list .item-thumbnail-left{
+	padding-left: 8.8em;
+}
+.s-list > img {
+    width: 3em !important;
+    max-width: 3em !important;
+    position: absolute;
+    z-index: 100;
+    top: .6em;
+    left: .55em;
+}
+.s-list a img{
+	width: 7.5em !important;
+	max-width: 7.5em !important;
+	max-height:5em !important;
+}
+.s-list h2{
+	color: #333;
+	font-size: .875em;
+}
+.s-list p{
+	color: #808080;
+	font-size: .69em;
+}
+.s-list i{
+	display: inline-block;
+	padding: .1em 0.5em 0em !important;
+	color: #666;
+	font-size: .6875em;
+}
+.s-icon-pen::before,.s-icon-see::before,.s-icon-like::before{
+	background-repeat: no-repeat;
+	background-position: center 100%;
+	background-size:100%;
+	display:inline-block;    
+	padding: .5rem;
+	margin-right: .15em;
+	
+	
+	padding-top: .8em;
+}
+.s-icon-pen::before{
+	/*content: url(../images/index/icon_pen.png);*/
+	content: "";
+	background-image: url(../images/index/icon_pen.png);
+	
+}
+.s-icon-see::before{
+	/*content: url(../images/index/icon_see.png);*/
+	content: "";
+	background-image: url(../images/index/icon_see.png) ;
+	
+}
+.s-icon-like::before{
+	content: "";
+	background-image: url(../images/index/icon_like.png);
+}
+
+.s-mark{
+	position: absolute;
+	top: 0;
+    z-index: -1;
+	right: 1em;
+	background-size: 100%;
+	width: 1.625em;
+	height: 3em;
+	background-image: url(../images/task/sign_no.png);
+}
+
+/*课程状态图标*/
+/*已签到*/
+.s-course-sign{
+	background-image: url(../images/task/wd_yiqiandao_icon.png);
+}
+/*未签到*/
+.s-course-nosign{
+	background-image: url(../images/task/sign_no.png);
+}
+/*已学习*/
+.s-course-study{
+	background-image: url(../images/task/wd_yixuexi_icon.png);
+}
+/*未学习*/
+.s-course-nostudy{
+	background-image: url(../images/task/wd_weixuexi_icon.png);
+}
+
+
+
+
+/*已完成*/
+.s-sign-done{
+	background-image: url(../images/task/sign_no.png);
+}
+
+
+
+
+/*----考试图标----*/
+/*未参加*/
+.s-exam-nojoin{
+	background-image: url(../images/task/ks_nojoin.png);
+}
+/*未完成*/
+.s-sign-nodone{
+	background-image: url(../images/task/wd_weiwancheng_icon.png);
+}
+/*未审阅*/
+.h-sign-nosee{
+	background-image: url(../images/task/sign_nocheck.png); /*没图标*/
+}
+/*待考试*/
+.h-sign-stayexam{
+	background-image: url(../images/task/h_stayexam.png);
+}
+/*不合格*/
+.h-sign-nopass{
+	background-image: url(../images/task/h_nopass.png);
+}
+/*合格*/
+.h-sign-pass{
+	background-image: url(../images/task/h_pass.png);
+}
+
+.s-nopic{
+	background-image:none;
+}
+
+
+/*---课程列表 end---*/
+
+/*任务中心-培训活动 start*/
+.h-mark{
+    position: absolute;
+    top: 1.09em;
+    right: 1em;
+    background-size: 100%;
+    width: 5em;
+    height: 2.5625em;
+    background-image: url(../images/task/sign_no.png);
+}
+/*等待报名*/
+.h-sign-stayregister{
+	background-image: url(../images/task/h_stayregister.png);
+}
+/*我要报名*/
+.h-sign-enroll{
+	background-image: url(../images/task/h_enroll.png);
+}
+/*我要取消*/
+.h-sign-cancel{
+	background-image: url(../images/task/h_cancel.png);
+	top: 2.10em;
+    right: 1.3em;
+}
+/*负责人*/
+.h-sign-person{
+	background-image: url(../images/task/xxrw_fuzeren_bg.png);
+}
+/*等待培训*/
+.h-sign-staytrain{
+	background-image: url(../images/task/h_staytrain.png);
+}
+
+
+/*任务中心-培训活动 start*/
+
+/*我的活动-未进行*/
+
+/*正在培训*/
+.h-sign-gotraint{
+	background-image: url(../images/task/gotraint.png);
+}
+/*任务失败*/
+.h-sign-taskfail{
+	background-image: url(../images/task/h_taskfail.png);
+}
+/*任务成功*/
+.h-sign-tasksuccess{
+	background-image: url(../images/task/h_tasksuccess.png);
+}
+/*推送失败*/
+.h-push-fail{
+	background-image: url(../images/task/h_push_fail.png);
+}
+/*推送中*/
+.h-push-going{
+	background-image: url(../images/task/h_push_going.png);
+}
+/*推送成功，已推送*/
+.h-push-success{
+	background-image: url(../images/task/h_push_success.png);
+}
+
+/*已推送,已完成*/
+.h-push-double{
+	background-image: url(../images/task/h_push_double.png);
+	width: 3.1em;
+    background-repeat: no-repeat;
+    height: 4em;
+}
+
+
+/*无数据提示 start*/
+#nodata_tips{
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	
+}
+#nodata_tips .s-middle{
+	margin: 0 auto;
+}
+/*无数据提示 end*/
+
+
+
+
+
+/*遮罩效果 start*/
+/*遮罩层css*/
+        #bg{
+          width:100%;
+          height:100%;
+          background:#000;
+          position:absolute;
+          opacity:0.2;
+          z-index:11;
+          display:none;
+        }
+        /*签到css*/
+        #u-sign{
+          position: absolute;
+          width: 16em;
+          height: 14.125em;
+          background: url(../../static/webapp/images/user/wode_qiandaotankuang_bg.png);
+          z-index: 12;
+          background-size: 100% 100%;
+          left: 50%;
+          margin-left: -8em;
+          top: 8.90215em;
+          display: none;
+        }
+        #u-sign .u-sign-top{
+          position: absolute;
+          width: 11.875em;
+          height: 2.0625em;
+          top: -1.4em;
+          left: 1.12em;
+          background: url(../../static/webapp/images/user/wode_qiandaotankuang_zhuangshi.png);
+          z-index: 12;
+          background-size: 100% 100%;
+        }
+        #u-sign .u-sign-header{
+          position: absolute;
+          width: 14.65625em;
+          height: 4.90625em;
+          top: 1.2em;
+          left: 0.6em;
+          background: url(../../static/webapp/images/user/wode_qiandaotankuang_icon_bg.png);
+          z-index: 12;
+          background-size: 100% 100%;
+        }
+        #u-sign .u-sign-middle{
+          display: block;
+          width: 8.119em;
+          height: 1.3636em;
+          background: url(../../static/webapp/images/user/wode_wenzixia.png);
+          background-size: 100% 100%;
+          margin:6.85em 0 0 3.8375em;
+        }
+        #u-sign .u-sign-eb{
+          display: block;
+          width: 10.53125em;
+          height: 1.0625em;
+          background: url(../../static/webapp/images/user/wode_wenzi.png);
+          background-size: 100% 100%;
+          margin:1.85em 0 0 3.0375em;
+        }
+        #u-sign .u-sign-close{
+          position: absolute;
+          width: 1.25em;
+          height: 1.25em;
+          background: url(../../static/webapp/images/user/wode_qiandaochenggongtankuang_icon.png);
+          background-size: 100% 100%;
+          top: 0;
+          right: 0;
+        }
+        /*删除框 交卷框css*/
+        .u-box{
+          position: absolute;
+          background: #fff;
+          width: 15.625em;
+          height: 9.375em;
+          margin-left: -7.8em;
+          top: 13.90215em;
+          left: 50%;
+          border-radius: 0.3125em;
+          z-index: 12;
+        }
+        .u-box .u-box-title{
+          width: 100%;
+          height: 6.875em;
+          line-height: 6.825em;
+          text-align: center;
+          font-size: 0.9375em;
+          color: #333;
+          border-bottom:0.03125em solid #dedede;
+        }
+        .u-box .u-box-choice{
+          padding: 0;
+          height: 2.8375em;
+        }
+        .u-box .u-box-choice button{
+          background: #fff;
+          border: none;
+          height: 100%;
+          font-family: '微软雅黑', 'yahei', ubuntu, helvetica, arial;
+        }
+        .u-box .u-box-choice button:nth-child(1){
+          border-right: 0.03125em solid #dedede;
+        }
+         .u-box .u-box-choice button:nth-child(2){
+          color: #3492ea;
+        }
+        #u-assignment{ display:none;}
+        #u-del{ display:none;}
+        .u-box .u-box-content{
+          width: 100%;
+          height: 6.875em;
+          font-size: 0.9375em;
+          color: #333;
+          border-bottom:0.03125em solid #dedede;
+          text-align: center;
+        }
+        .u-box .u-box-content .u-content-complete{
+          padding-top: 0.9375em;
+        }
+         .u-box .u-box-content .u-content-number{
+          padding-top: 1.09375em;
+          font-size: 1.25em;
+          color: #3492ea;
+        }
+
+/*遮罩效果 end*/
+
+/*重写底部导航*/
+.tabs-icon-top > .tabs .tab-item {
+	line-height: 4px;
+	
+}
+
+
+
+
+/*服务弹窗效果start*/
+ /*模态框（选人）*/
+   #my-Modal{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        _position: absolute;
+        top: 0;
+        left:0;
+        z-index: 1000;
+        background-color:rgba(0,0,0,0.2);
+    }
+    #modal-Dialog {
+    	z-index: 1013;
+	    position: absolute;
+	    width: 15.6em;
+	    /* height: 9.09375em; */
+	min-height: 7em;
+	left: 50%;
+	margin-left: -6.875em;
+	top: 50%;
+	margin-top: -8em;
+	background-color: #ffffff;
+	border-radius: 0.5em;
+}
+.modal-content{
+	margin: 0.7em;
+}
+.s-popcont{
+	color: #333;
+	font-size:0.94em;
+}
+
+.s-popfooter{
+	
+}
+.s-popfooter p{
+	text-align: center;
+	color: #333;
+	border-top:1px solid #e5e5e5;
+	padding: .7em;
+	margin: 0;
+}
+/*服务弹窗效果 end*/

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+
+	<!-- 头部 -->
+	<div class="head">
+		<img src="image/logo1.png">
+	</div>
+
+
+	<!-- banner -->
+	<div class="banner bga">
+	
+	
+		<div class="banner_title">
+				<img src="image/drop_logso.png">
+		</div>
+		<ul class="w_btn">
+			<li class="lia">
+				<h2>Team Introduction</h2>
+				<p>团队介绍</p>
+			</li>
+			<li class="lib">
+				<h2>Team Introduction</h2>
+				<p>各组介绍</p>
+			</li>
+			<li class="lic">
+				<h2>Team Introduction</h2>
+				<p>陈列室</p>
+			</li>
+			<li class="lid">
+				<h2>Team Introduction</h2>
+				<p>成员风采</p>
+			</li>
+			<li class="lie">
+				<h2>Team Introduction</h2>
+				<p>加入我们</p>
+			</li>
+		</ul>
+
+		<div class="move">
+			<img src="image/Unknown-1.png" class="move_img">
+			<div class="zi"></div>
+		</div>
+	</div>
+
+	<div class="cont">
+		<img src="image/drop_logo.png" style="margin: 0 auto; display: block; padding: 80px 0;">
+		<p class="neirong">我们是最具亲和力的校园互联网团队。轻松活跃的团队氛围是团队成员收获成长的源动力，是团队不断进步、走向成熟的保证。追求卓越是每个人冰岩人所标榜的工作理念。用最新的Web知识充实自己，用最严格的要求审视自己的每一个创意、每一件设计、每一行代码。</p>
+		<div class="cont_left">
+			<img src="image/location.jpg">
+			<p>冰岩作坊团队主管：常明明</p>
+			<p>工作邮箱：cmm@bingyan.net</p>
+			<p>办公电话：(027) 87793534</p>
+			<p>传真：(027) 87542401（停用）</p>
+			<p>地址：中国 武汉 华中科技大学（东校区）启明学院亮胜楼1006</p>
+		</div>
+		<div class="cont_right">
+			<div class="same1">
+				<p>姓名</p>
+				<input type="text"></input>
+			</div>
+			<div class="same1">
+				<p>邮箱</p>
+				<input type="text"></input>
+			</div>
+			<div class="same1">
+				<p>电话</p>
+				<input type="text"></input>
+			</div>
+			<div class="same1">
+				<p>信息</p>
+				<textarea></textarea>
+			</div>
+			<input src="submit" class="tijiao" value="发送消息"></input>
+		</div>
+
+
+	</div>
+	<div style="clear: both;"></div>
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="middle">
+			<h2>友情链接</h2>
+			<div class="link">
+				
+			                    <a href="#">华中科技大学</a>
+			                    <a href="javascript:;">大软坊</a>
+			                    <a href="javascript:;">华中大在线</a>
+			                     <a href="javascript:;">二手市场</a>
+			                     <a href="javascript:;">>iKnow</a>
+			                     <a href="javascript:;">爱选修</a>
+			                     <a href="javascript:;">华中大相册</a>
+			                     <a href="javascript:;">华中大校园通</a>
+			                     <a href="javascript:;">蝴蝶-HUDBT</a>
+			                    <a href="javascript:;">回音</a>
+			                    <a href="#"></a>
+			                    <a href="#"></a>
+			        
+			</div>
+			<div class="over"> 2014(C) Powered by <img src="image/by.png" alt="冰岩作坊"/> Bingyan Studio  All Rights Reserved.</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<script src="jq/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.lia').mouseover(function(event) {
+		$('.banner').addClass('bga').removeClass('bgb bgc bgd bge');
+	});
+	$('.lib').mouseover(function(event) {
+		$('.banner').addClass('bgb').removeClass('bga bgc bgd bge');
+	});
+	$('.lic').mouseover(function(event) {
+		$('.banner').addClass('bgc').removeClass('bga bgb bgd bge');
+	});
+	$('.lid').mouseover(function(event) {
+		$('.banner').addClass('bgd').removeClass('bga bgc bgc bge');
+	});
+	$('.lie').mouseover(function(event) {
+		$('.banner').addClass('bge').removeClass('bga bgc bgd bgd');
+	});
+</script>
+</body>
+</html>
